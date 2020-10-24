@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+header h2 {
+  font-family: "shrikhand", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+body {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
