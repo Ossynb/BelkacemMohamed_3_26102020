@@ -7,26 +7,65 @@
     src:url("fonts/Roboto-Regular.ttf");
 }
 
+.btn{
+    background-color: #9356DC;
+    background-image:linear-gradient(to bottom right,#ff79DA,rgba(255,255,255, 0));
+    color:white;
+    padding: 8px;
+    border-radius: 35px;
+    border:none ;
+}
+
 header{
-    display:flex;
-    justify-content: center;
+    text-align: center;
     & h2{
         font-family: "shrikhand",Arial, Helvetica, sans-serif;
-        font-weight: bolder;
+        font-weight: bold;
+        font-size: 32px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }    
 }
 
 body{
     font-family:"roboto", Arial, Helvetica, sans-serif;
     width:100%;
+    margin:0;
 }
 
 .presentation{
-    display: flex;
-    justify-content: center;
-    flex-direction:column ;
+    background-color: whitesmoke;
     text-align: center;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    .location{
+        background-color:#DCDCDC ;
+        border-top: solid silver;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+
+    }
+    .location .fas{
+        margin-right: 12px;
+    }
+
+    h1{
+        font-size:30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size:15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
+
+
+
+
 
 
 
