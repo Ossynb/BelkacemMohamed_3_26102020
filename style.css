@@ -6,6 +6,15 @@
   font-family: "roboto";
   src: url("fonts/Roboto-Medium.ttf");
 }
+@font-face {
+  font-family: "regular";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .btn {
   background-color: #9356DC;
   background-image: linear-gradient(to bottom right, #ff79DA, rgba(255, 255, 255, 0));
@@ -30,6 +39,33 @@ body {
   font-family: "roboto", Arial, Helvetica, sans-serif;
   width: 100%;
   margin: 0;
+}
+
+footer {
+  font-family: "regular";
+  background-color: rgba(0, 0, 0, 0.78);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+footer h4 {
+  font-size: 18px;
+  font-family: "shrikhand";
+  margin-left: 20px;
+  font-weight: lighter;
+}
+footer p {
+  margin-left: 20px;
+}
+footer a {
+  color: white;
+}
+footer .fas {
+  margin-right: 10px;
+}
+footer .fa-handshake {
+  transform: rotate(-45deg);
+  font-size: 12px;
 }
 
 .presentation {
@@ -76,13 +112,14 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: 40px;
 }
 .fonctionnement h3 {
-  font-size: 25px;
+  font-size: 23px;
   text-align: left;
   margin-left: 10px;
   margin-top: 35px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .fonctionnement p {
   background-color: whitesmoke;
@@ -90,9 +127,8 @@ body {
   border-radius: 18px;
   width: 100%;
   padding: 30px;
-  margin-right: 20px;
-  margin-left: 20px;
-  box-shadow: 0px 0px 13px #ba9fdb;
+  margin: 10px 20px 10px 20px;
+  box-shadow: 5px 5px 13px whitesmoke;
 }
 
 .button {
@@ -127,26 +163,61 @@ body {
   left: -46px;
 }
 
+#restaurants {
+  background-color: whitesmoke;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+h3 {
+  margin-left: 10px;
+  font-size: 23px;
+}
+
 .card_restaurants {
   margin-bottom: 20px;
   border-radius: 15px;
-  border: solid black;
   margin-right: 20px;
   margin-left: 20px;
   overflow: hidden;
+  background-color: white;
+  box-shadow: 5px 5px 10px lightgray;
 }
 .card_restaurants img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
 }
 .card_restaurants .menu {
   display: flex;
   justify-content: space-between;
-  margin: -10px 15px 0px 15px;
+  margin: -10px 25px 0px 15px;
+}
+.card_restaurants p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bolder;
+}
+.card_restaurants .Quartier {
+  font-weight: lighter;
 }
 .card_restaurants .far {
-  text-align: baseline;
+  font-size: 23px;
+}
+
+.menu_image {
+  position: relative;
+}
+.menu_image .menu_image_texte {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99e2d0;
+  color: #2e8872;
+  padding: 7px 11px 7px 11px;
+  border-radius: 3px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
