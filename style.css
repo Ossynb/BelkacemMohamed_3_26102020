@@ -220,4 +220,26 @@ h3 {
   font-size: 14px;
 }
 
+.restaurantselected_images img {
+  width: 100%;
+  object-fit: cover;
+  height: 220px;
+}
+
+.restaurantselected_titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 0px;
+}
+.restaurantselected_titre h1 {
+  font-family: "shrikhand";
+  font-size: 30px;
+}
+.restaurantselected_titre .fa-heart {
+  font-size: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
