@@ -23,6 +23,30 @@ a {
   padding: 12px 18px 12px 18px;
   border-radius: 40px;
   border: none;
+  box-shadow: 2px 3px 8px lightgrey;
+  transition: background-color 0.7s ease-out;
+  transition: box-shadow 0.7s ease-out;
+}
+.btn:hover {
+  background-color: #b389e7;
+  box-shadow: 2px 3px 8px black;
+}
+
+.fa-heart_empty, .restaurantselected_heart-empty {
+  cursor: pointer;
+  transition: all 0.7s ease-out;
+}
+.fa-heart_empty:hover, .restaurantselected_heart-empty:hover {
+  color: #9356DC;
+}
+
+.fa-heart_fill, .restaurantselected_heart-fill {
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}
+.fa-heart_fill:hover, .restaurantselected_heart-fill:hover {
+  opacity: 1;
 }
 
 header {
@@ -104,7 +128,6 @@ footer .fa-handshake {
 
 .btn_presentation {
   margin-bottom: 20px;
-  box-shadow: 2px 3px 8px silver;
 }
 
 .fonctionnement {
@@ -204,7 +227,18 @@ h3 {
   font-weight: lighter;
 }
 .card_restaurants .far {
+  position: absolute;
   font-size: 23px;
+  right: 47px;
+}
+.card_restaurants .fas {
+  position: absolute;
+  font-size: 23px;
+  right: 47px;
+  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu_image {
@@ -278,8 +312,21 @@ h3 {
   font-family: "shrikhand";
   font-size: 30px;
 }
-.restaurantselected_titre .fa-heart {
+.restaurantselected_titre .restaurantselected_heart-empty {
+  position: absolute;
   font-size: 28px;
+  right: 25px;
+  top: 307px;
+}
+.restaurantselected_titre .restaurantselected_heart-fill {
+  position: absolute;
+  font-size: 28px;
+  right: 25px;
+  top: 307px;
+  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .EntréesPlatsDesserts {
@@ -305,6 +352,17 @@ h3 {
   border-radius: 18px;
   margin: 0px 19px 15px 19px;
   box-shadow: 5px 5px 9px lightgrey;
+  overflow: hidden;
+  transition: all 1s ease-out;
+}
+.EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover {
+  cursor: pointer;
+}
+.EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .priceandcheck {
+  transform: translateX(0px);
+}
+.EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .fa-check-circle {
+  transform: rotate(-360deg);
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts_titre {
   margin-bottom: 2px;
@@ -321,11 +379,38 @@ h3 {
   font-size: 14px;
   width: 95%;
 }
+.EntréesPlatsDesserts .priceandcheck {
+  position: relative;
+  display: flex;
+  width: 120px;
+  right: 0%;
+  transition: transform 1s ease-out;
+  transform: translateX(70px);
+}
+.EntréesPlatsDesserts .price1 {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  width: 50px;
+}
 .EntréesPlatsDesserts .price {
   display: flex;
   align-items: flex-end;
   margin-right: 25px;
   font-weight: bold;
+}
+.EntréesPlatsDesserts .check {
+  background-color: #99e2d0;
+  border-radius: 0px 13px 13px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  font-size: 22px;
+}
+.EntréesPlatsDesserts .check .fa-check-circle {
+  transition: transform 1s ease-out;
+  transform: rotate(0deg);
 }
 
 .commander {

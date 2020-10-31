@@ -11,17 +11,50 @@
     src:url("fonts/Roboto-Regular.ttf");
 }
 
+$primary_color:#9356DC;
+$secondary_color:#ff79DA;
+$third_color:#99e2d0;
+$shadow_color:lightgrey;
+
+
+
 a{
     text-decoration: none;
     color: black;
 }
 .btn{
-    background-color:#9356DC;
-    background-image:linear-gradient(to bottom right,#ff79DA,rgba(255,255,255, 0));
+    background-color:$primary_color;
+    background-image:linear-gradient(to bottom right,$secondary_color,rgba(255,255,255, 0));
     color:white;
     padding: 12px 18px 12px 18px;
     border-radius: 40px;
     border:none ;
+    box-shadow: 2px 3px 8px $shadow_color;
+    transition: background-color 0.7s ease-out;
+    transition: box-shadow 0.7s ease-out;
+    &:hover{
+        background-color: lighten($color: $primary_color, $amount: 12);
+        box-shadow:2px 3px 8px black;
+    }
+}
+
+.fa-heart_empty, .restaurantselected_heart-empty{
+    cursor: pointer;
+    transition: all 0.7s ease-out ;
+
+ 
+    &:hover{
+        color:$primary_color;
+    }
+}
+
+.fa-heart_fill, .restaurantselected_heart-fill{
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.7s ease-out;
+        &:hover{
+        opacity: 1;
+    }
 }
 
 header{
@@ -108,7 +141,7 @@ footer{
 
 .btn_presentation{
     margin-bottom: 20px;
-    box-shadow: 2px 3px 8px silver;
+    
 }
 
 .fonctionnement{
@@ -156,7 +189,7 @@ footer{
         height:25px;
         border-radius: 50%;
         left:36px;
-        background-color:#9356DC;
+        background-color:$primary_color;
     }
 
     .fas{
@@ -218,7 +251,23 @@ h3{
     }
 
     .far{
+        position: absolute;
+        font-size: 23px;  
+        right:47px;
+        
+
+    }
+
+    .fas{
+        position:absolute;
         font-size: 23px;
+        right:47px; 
+        color:$primary_color;
+        background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+         
     }
 }
 
@@ -229,7 +278,7 @@ h3{
         position:absolute;
         top:15px;
         right:15px;
-        background-color: #99e2d0;
+        background-color: $third_color;
         color:#2e8872;
         padding: 7px 11px 7px 11px;
         border-radius: 3px;
@@ -237,6 +286,8 @@ h3{
     }
 }
 /*---------------------PAGE RESTAURANTS------------------*/
+
+
 
 .entête{
     display: flex;
@@ -297,8 +348,22 @@ h3{
         font-size: 30px;  
     }
 
-    .fa-heart{
+    .restaurantselected_heart-empty{
+        position: absolute;
         font-size:28px;
+        right: 25px;
+        top :307px;
+    }
+    .restaurantselected_heart-fill{
+        position: absolute;
+        font-size: 28px;
+        right: 25px;
+        top: 307px;
+        color:$primary_color;
+        background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
     }
 
 }
@@ -309,7 +374,7 @@ h3{
     
     .EntréesPlatsDesserts_underline{
         padding-top: 20px;
-        border-top: solid #99e2d0;
+        border-top: solid $third_color;
         width: 14%;
         margin-left:19px
     }
@@ -324,17 +389,34 @@ h3{
         display: flex;
         justify-content: space-between;
         background-color: white;
-        
         border-radius: 18px;
         margin:0px 19px 15px 19px; 
         box-shadow: 5px 5px 9px lightgrey;
-          
+        overflow: hidden;
+        transition: all 1s ease-out;
+        
+        
+        &:hover{
+            cursor: pointer;
+            .priceandcheck {
+                transform: translateX(0px);
+            }
+            .fa-check-circle{
+                    transform: rotate(-360deg);
+                      
+            }
+        }
+        
+             
     }
+
+    
     .button_EntréesPlatsDesserts_titre{
         margin-bottom:2px;
         margin-left:10px ;
         font-weight: bold;
         font-size: 17px;
+       
     }
     .button_EntréesPlatsDesserts_accompagnement{
         display: flex;
@@ -344,6 +426,30 @@ h3{
         font-family: "robotoregular";
         font-size: 14px;
         width: 95%;
+       
+    }
+
+    
+
+    .priceandcheck{
+        
+        position: relative;
+        display: flex;
+        width: 120px;
+        right:0%;
+        transition: transform 1s ease-out;
+        transform: translateX(70px);
+       
+    }
+
+    .price1{
+        display:flex;
+        align-items: flex-end;
+        font-weight: bold;
+        width: 50px;
+        
+       
+        
     }
 
     .price{
@@ -353,7 +459,22 @@ h3{
         font-weight: bold;
     }
 
+    .check{
+        background-color: $third_color;
+        border-radius: 0px 13px 13px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:70px;
+        font-size:22px;
+       
+        .fa-check-circle{
+            transition: transform 1s ease-out;
+            transform: rotate(0deg);
+        }  
+    }
 }
+
     .commander{
         background-color: whitesmoke;
         display: flex;
