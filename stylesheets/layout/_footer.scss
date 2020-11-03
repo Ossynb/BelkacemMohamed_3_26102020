@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer{
+    font-family:"robotoregular";
+    background-color: rgba(0, 0, 0, 0.780);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    & h4{
+        font-size: 18px;
+        font-family: "shrikhand";
+        margin-left: 20px;
+        font-weight: lighter;
+    }
+    p{
+        margin-left:20px;
+    }
+    a{
+        color: white;
+    }
+
+    .fas{
+        margin-right: 10px;
+    }
+
+    .fa-handshake{
+        transform: rotate(-45deg);
+        font-size:12px;
+    }
+}

@@ -1,0 +1,161 @@
+
+.restaurantselected{
+    background-repeat: no-repeat;
+    height:310px;
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.restaurantselected1{
+    background-image: url("images/La\ palette\ du\ goût.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+.restaurantselected2{
+    background-image: url("images/La\ note\ enchantée.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.restaurantselected3{
+    background-image: url("images/A\ la\ française.jpg");
+    background-size:cover;
+    background-position: center;
+}
+
+.restaurantselected4{
+    background-image: url("images/Le\ délice\ des\ sens.jpg");
+    background-size: contain;
+    
+}
+
+.restaurantselected_titre{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width:100%;
+    padding-right: 25px;
+    padding-left: 15px;
+    background-color: whitesmoke;
+    border-top-right-radius: 40px;
+    border-top-left-radius:40px ;
+    
+    h1{
+        font-family: "shrikhand";
+        font-size: 30px;  
+    }
+
+}
+
+.EntréesPlatsDesserts{
+    background-color: whitesmoke;
+    padding-bottom: 20px;
+    
+    .EntréesPlatsDesserts_underline{
+        padding-top: 20px;
+        border-top: solid $third_color;
+        width: 14%;
+        margin-left:19px
+    }
+    h3{
+        margin:0px 19px 5px 19px;
+        font-family:"robotoregular";
+        font-weight: lighter;
+        font-size: 20px;    
+    }
+
+    .button_EntréesPlatsDesserts{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 18px;
+        margin:0px 19px 15px 19px; 
+        box-shadow: 5px 5px 9px lightgrey;
+        overflow: hidden;
+        transition: all 1s ease-out;
+        
+        &:hover{
+            cursor: pointer;
+            .priceandcheck {
+                transform: translateX(0px);
+            }
+            .fa-check-circle{
+                    transform: rotate(-360deg);
+                      
+            }
+        }           
+    }
+
+    .button_EntréesPlatsDesserts_titre{
+        margin-bottom:2px;
+        margin-left:10px ;
+        font-weight: bold;
+        font-size: 17px;
+       
+    }
+    .button_EntréesPlatsDesserts_accompagnement{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2px;
+        margin-left: 10px;
+        font-family: "robotoregular";
+        font-size: 14px;
+        width: 95%;
+       
+    }
+
+    .priceandcheck{   
+        position: relative;
+        display: flex;
+        width: 120px;
+        right:0%;
+        transition: transform 1s ease-out;
+        transform: translateX(70px);
+       
+    }
+
+    .price1{
+        display:flex;
+        align-items: flex-end;
+        font-weight: bold;
+        width: 50px;
+            
+    }
+
+    .price{
+        display:flex;
+        align-items:flex-end;
+        margin-right: 25px;
+        font-weight: bold;
+    }
+
+    .check{
+        background-color: $third_color;
+        border-radius: 0px 13px 13px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:70px;
+        font-size:22px;
+       
+        .fa-check-circle{
+            transition: transform 1s ease-out;
+            transform: rotate(0deg);
+        }  
+    }
+}
+
+    .commander{
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        padding-top: 20px;
+
+        .btn_commander{
+            width:45%;
+
+        }
+    }

@@ -1,0 +1,36 @@
+.fa-heart_empty, .restaurantselected_heart-empty{
+    cursor: pointer;
+    transition: all 0.7s ease-out ;
+    &:hover{
+        color:$primary_color;
+    }
+}
+
+.fa-heart_fill, .restaurantselected_heart-fill{
+    background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.7s ease-out;
+        &:hover{
+        opacity: 1;
+    }
+}
+
+.restaurantselected_heart-empty{
+    position: absolute;
+    font-size:28px;
+    right: 25px;
+    top :307px;
+}
+
+.restaurantselected_heart-fill{
+    position: absolute;
+    font-size: 28px;
+    right: 25px;
+    top: 307px;
+    color:$primary_color;
+    
+}

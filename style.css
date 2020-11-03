@@ -11,42 +11,18 @@
   font-family: "robotoregular";
   src: url("fonts/Roboto-Regular.ttf");
 }
+/**
+ * Basic style for copy text
+ */
 a {
   text-decoration: none;
   color: black;
 }
 
-.btn {
-  background-color: #9356DC;
-  background-image: linear-gradient(to bottom right, #ff79DA, rgba(255, 255, 255, 0));
-  color: white;
-  padding: 12px 18px 12px 18px;
-  border-radius: 40px;
-  border: none;
-  box-shadow: 2px 3px 8px lightgrey;
-  transition: background-color 0.7s ease-out;
-  transition: box-shadow 0.7s ease-out;
-}
-.btn:hover {
-  background-color: #b389e7;
-  box-shadow: 2px 3px 8px black;
-}
-
-.fa-heart_empty, .restaurantselected_heart-empty {
-  cursor: pointer;
-  transition: all 0.7s ease-out;
-}
-.fa-heart_empty:hover, .restaurantselected_heart-empty:hover {
-  color: #9356DC;
-}
-
-.fa-heart_fill, .restaurantselected_heart-fill {
-  cursor: pointer;
-  opacity: 0;
-  transition: all 0.7s ease-out;
-}
-.fa-heart_fill:hover, .restaurantselected_heart-fill:hover {
-  opacity: 1;
+body {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0;
 }
 
 header {
@@ -60,10 +36,15 @@ header h2 {
   margin-bottom: 8px;
 }
 
-body {
-  font-family: "roboto", Arial, Helvetica, sans-serif;
-  width: 100%;
-  margin: 0;
+.headermenu {
+  display: flex;
+  justify-content: center;
+}
+.headermenu .headermenu_arrow {
+  position: absolute;
+  font-size: 22px;
+  left: 20px;
+  top: 22px;
 }
 
 footer {
@@ -91,6 +72,58 @@ footer .fas {
 footer .fa-handshake {
   transform: rotate(-45deg);
   font-size: 12px;
+}
+
+.btn {
+  background-color: #9356DC;
+  background-image: linear-gradient(to bottom right, #ff79DA, rgba(255, 255, 255, 0));
+  color: white;
+  padding: 12px 18px 12px 18px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 2px 3px 8px lightgrey;
+  transition: background-color 0.7s ease-out;
+  transition: box-shadow 0.7s ease-out;
+}
+.btn:hover {
+  background-color: #b389e7;
+  box-shadow: 2px 3px 8px black;
+}
+
+.fa-heart_empty, .restaurantselected_heart-empty {
+  cursor: pointer;
+  transition: all 0.7s ease-out;
+}
+.fa-heart_empty:hover, .restaurantselected_heart-empty:hover {
+  color: #9356DC;
+}
+
+.fa-heart_fill, .restaurantselected_heart-fill {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79DA));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}
+.fa-heart_fill:hover, .restaurantselected_heart-fill:hover {
+  opacity: 1;
+}
+
+.restaurantselected_heart-empty {
+  position: absolute;
+  font-size: 28px;
+  right: 25px;
+  top: 307px;
+}
+
+.restaurantselected_heart-fill {
+  position: absolute;
+  font-size: 28px;
+  right: 25px;
+  top: 307px;
+  color: #9356DC;
 }
 
 .presentation {
@@ -236,8 +269,8 @@ h3 {
   font-size: 23px;
   right: 47px;
   color: #9356DC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79DA));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -255,18 +288,6 @@ h3 {
   font-size: 14px;
 }
 
-/*---------------------PAGE RESTAURANTS------------------*/
-.entête {
-  display: flex;
-  justify-content: center;
-}
-.entête .entête_flèche {
-  position: absolute;
-  font-size: 22px;
-  left: 20px;
-  top: 22px;
-}
-
 .restaurantselected {
   background-repeat: no-repeat;
   height: 310px;
@@ -277,7 +298,8 @@ h3 {
 
 .restaurantselected1 {
   background-image: url("images/La palette du goût.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .restaurantselected2 {
@@ -311,22 +333,6 @@ h3 {
 .restaurantselected_titre h1 {
   font-family: "shrikhand";
   font-size: 30px;
-}
-.restaurantselected_titre .restaurantselected_heart-empty {
-  position: absolute;
-  font-size: 28px;
-  right: 25px;
-  top: 307px;
-}
-.restaurantselected_titre .restaurantselected_heart-fill {
-  position: absolute;
-  font-size: 28px;
-  right: 25px;
-  top: 307px;
-  color: #9356DC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79DA));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .EntréesPlatsDesserts {

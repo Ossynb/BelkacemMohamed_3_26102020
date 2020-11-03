@@ -1,0 +1,185 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.presentation{
+    background-color: whitesmoke;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    .location{
+        background-color:#DCDCDC ;
+        border-top: solid silver;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+
+    }
+    .location .fas{
+        margin-right: 12px;
+    }
+
+    h1{
+        font-size:26px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    p{
+        font-size:15px;
+        color: grey;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+.btn_presentation{
+    margin-bottom: 20px;
+    
+}
+
+.fonctionnement{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+
+    h3{
+        font-size: 23px;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+       
+    p{
+        background-color: whitesmoke;
+        font-weight: bolder;
+        border-radius: 18px;
+        width: 100%;
+        padding:30px;
+        margin:10px 20px 10px 20px;
+        box-shadow:5px 5px 13px whitesmoke; 
+    }    
+}
+
+.button{
+    display:flex;
+    justify-content:flex-start;
+    align-content: center;
+    align-items: baseline;
+    margin-left: -30px;
+
+    .button_fonctionnement_chiffre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        text-align: center;
+        width:36.1px;
+        height:25px;
+        border-radius: 50%;
+        left:36px;
+        background-color:$primary_color;
+    }
+
+    .fas{
+        position: relative;
+        left: -50px;
+        margin-right: -25px;
+    }
+
+    .fa-mobile-alt{
+        left: -45px;
+    }
+
+    .fa-store{
+        left: -46px;
+    }
+}
+
+#restaurants{
+    background-color:  whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+h3{
+    margin-left: 10px;
+    font-size: 23px;
+}
+.card_restaurants{
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 5px 5px 10px lightgray ;
+    
+    img{
+        width:100%;
+        height:180px;
+        object-fit: cover;
+    }    
+    
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        margin: -10px 25px 0px 15px;   
+
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bolder;
+    }
+
+    .Quartier{
+        font-weight: lighter;
+    }
+
+    .far{
+        position: absolute;
+        font-size: 23px;  
+        right:47px;
+        
+
+    }
+
+    .fas{
+        position:absolute;
+        font-size: 23px;
+        right:47px; 
+        color:$primary_color;
+        
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+    }
+}
+
+.menu_image{
+    position:relative;
+
+    .menu_image_texte{
+        position:absolute;
+        top:15px;
+        right:15px;
+        background-color: $third_color;
+        color:#2e8872;
+        padding: 7px 11px 7px 11px;
+        border-radius: 3px;
+        font-size:14px;
+    }
+}

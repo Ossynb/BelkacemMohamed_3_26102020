@@ -1,0 +1,22 @@
+header{
+    text-align: center;
+    & h2{
+        font-family: "shrikhand",Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }    
+}
+
+.headermenu{
+    display: flex;
+    justify-content: center; 
+
+    .headermenu_arrow{
+        position : absolute;
+        font-size:22px;
+        left:20px;
+        top:22px;       
+    }
+}
