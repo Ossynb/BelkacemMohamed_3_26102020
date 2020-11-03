@@ -359,7 +359,6 @@ h3 {
   margin: 0px 19px 15px 19px;
   box-shadow: 5px 5px 9px lightgrey;
   overflow: hidden;
-  transition: all 1s ease-out;
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover {
   cursor: pointer;
@@ -367,8 +366,11 @@ h3 {
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .priceandcheck {
   transform: translateX(0px);
 }
+.EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .price1 {
+  transform: translateX(0px);
+}
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .fa-check-circle {
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts_titre {
   margin-bottom: 2px;
@@ -390,7 +392,7 @@ h3 {
   display: flex;
   width: 120px;
   right: 0%;
-  transition: transform 1s ease-out;
+  transition: transform 0.7s ease-out;
   transform: translateX(70px);
 }
 .EntréesPlatsDesserts .price1 {
@@ -398,6 +400,7 @@ h3 {
   align-items: flex-end;
   font-weight: bold;
   width: 50px;
+  transition: transform 1s ease-out;
 }
 .EntréesPlatsDesserts .price {
   display: flex;
@@ -415,8 +418,10 @@ h3 {
   font-size: 22px;
 }
 .EntréesPlatsDesserts .check .fa-check-circle {
-  transition: transform 1s ease-out;
-  transform: rotate(0deg);
+  background-color: #99e2d0;
+  color: white;
+  transition: transform 0.7s ease-out;
+  transform: rotate(-180deg);
 }
 
 .commander {

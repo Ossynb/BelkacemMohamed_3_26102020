@@ -74,15 +74,21 @@
         margin:0px 19px 15px 19px; 
         box-shadow: 5px 5px 9px lightgrey;
         overflow: hidden;
-        transition: all 1s ease-out;
         
         &:hover{
             cursor: pointer;
             .priceandcheck {
                 transform: translateX(0px);
             }
+
+            .price1{
+
+                transform: translateX(0px);
+
+            }
+            
             .fa-check-circle{
-                    transform: rotate(-360deg);
+                    transform: rotate(360deg);
                       
             }
         }           
@@ -111,7 +117,7 @@
         display: flex;
         width: 120px;
         right:0%;
-        transition: transform 1s ease-out;
+        transition: transform 0.7s ease-out;
         transform: translateX(70px);
        
     }
@@ -121,6 +127,7 @@
         align-items: flex-end;
         font-weight: bold;
         width: 50px;
+        transition: transform 1s ease-out;
             
     }
 
@@ -139,10 +146,14 @@
         align-items: center;
         width:70px;
         font-size:22px;
+        
+        
        
         .fa-check-circle{
-            transition: transform 1s ease-out;
-            transform: rotate(0deg);
+            background-color: $third_color;
+            color:white;
+            transition: transform 0.7s ease-out;
+            transform: rotate(-180deg);
         }  
     }
 }
