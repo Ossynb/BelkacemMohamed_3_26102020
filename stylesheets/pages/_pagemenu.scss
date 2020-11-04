@@ -27,8 +27,8 @@
 
 .restaurantselected4{
     background-image: url("images/Le\ délice\ des\ sens.jpg");
-    background-size: contain;
-    
+    background-size: cover;
+    background-position: center;  
 }
 
 .restaurantselected_titre{
@@ -77,20 +77,33 @@
         
         &:hover{
             cursor: pointer;
-            .priceandcheck {
-                transform: translateX(0px);
+
+            .check {
+                transform: translateX(-70px);
+                -moz-transform: translateX(-70px);
+                -webkit-transform: translateX(-70px);
             }
 
             .price1{
-
-                transform: translateX(0px);
-
+                transform: translateX(-70px);
+                -moz-transform: translateX(-70px);
+                -webkit-transform: translateX(-70px);  
             }
             
             .fa-check-circle{
                     transform: rotate(360deg);
-                      
+                    -moz-transform: rotate(360deg); 
+                    -webkit-transform: rotate(360deg);         
             }
+            .nomplat{
+                width: 62%;     
+            }
+
+            .button_EntréesPlatsDesserts_accompagnement{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;;       
+            }   
         }           
     }
 
@@ -99,27 +112,31 @@
         margin-left:10px ;
         font-weight: bold;
         font-size: 17px;
-       
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        overflow-wrap: break-word;              
     }
+
     .button_EntréesPlatsDesserts_accompagnement{
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 2px;
         margin-left: 10px;
         font-family: "robotoregular";
         font-size: 14px;
         width: 95%;
-       
+        overflow: visible;
+        white-space: wrap;
+        word-break: keep-all;   
     }
 
     .priceandcheck{   
         position: relative;
         display: flex;
-        width: 120px;
+        margin-left: -75px;
         right:0%;
-        transition: transform 0.7s ease-out;
         transform: translateX(70px);
-       
+        -moz-transform: translateX(70px);
+        -webkit-transform: translateX(70px);  
     }
 
     .price1{
@@ -127,15 +144,11 @@
         align-items: flex-end;
         font-weight: bold;
         width: 50px;
-        transition: transform 1s ease-out;
-            
-    }
-
-    .price{
-        display:flex;
-        align-items:flex-end;
-        margin-right: 25px;
-        font-weight: bold;
+        transition: transform 0.9s ease-out 0.15s; 
+        -moz-transition: transform 0.9s ease-out 0.15s;
+        -webkit-transition: transform 0.9s ease-out 0.15s;
+        margin-left: 30px;
+        background-color: white;   
     }
 
     .check{
@@ -146,14 +159,19 @@
         align-items: center;
         width:70px;
         font-size:22px;
+        transition: transform 0.9s ease-out;
+        -moz-transition: transform 0.9s ease-out;
+        -webkit-transition: transform 0.9s ease-out;
         
-        
-       
         .fa-check-circle{
             background-color: $third_color;
             color:white;
-            transition: transform 0.7s ease-out;
+            transition: transform 0.9s ease-out;
+            -moz-transition: transform 0.9s ease-out;
+            -webkit-transition: transform 0.9s ease-out;
             transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
         }  
     }
 }
@@ -167,6 +185,13 @@
 
         .btn_commander{
             width:45%;
-
         }
+    }
+
+    .nomplat{ 
+        width: 100%;
+        transition: width 1.05s ease-out;
+        -moz-transition: width 1.05s ease-out;
+        -webkit-transition: width 1.05s ease-out;
+        overflow: hidden;        
     }

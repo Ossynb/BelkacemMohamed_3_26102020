@@ -11,7 +11,12 @@
     border:none ;
     box-shadow: 2px 3px 8px $shadow_color;
     transition: background-color 0.7s ease-out;
+    -moz-transition: background-color 0.7s ease-out;
+    -webkit-transition: background-color 0.7s ease-out;
     transition: box-shadow 0.7s ease-out;
+    -moz-transition: box-shadow 0.7s ease-out;
+    -webkit-transition: box-shadow 0.7s ease-out;
+    
     &:hover{
         background-color: lighten($color: $primary_color, $amount: 12);
         box-shadow:2px 3px 8px black;

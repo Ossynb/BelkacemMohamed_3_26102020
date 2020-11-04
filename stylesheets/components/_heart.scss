@@ -1,6 +1,9 @@
 .fa-heart_empty, .restaurantselected_heart-empty{
     cursor: pointer;
-    transition: all 0.7s ease-out ;
+    transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+
     &:hover{
         color:$primary_color;
     }
@@ -8,12 +11,16 @@
 
 .fa-heart_fill, .restaurantselected_heart-fill{
     background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
+    -moz-background-clip: text;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     cursor: pointer;
     opacity: 0;
     transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
         &:hover{
         opacity: 1;
     }

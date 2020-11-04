@@ -83,7 +83,11 @@ footer .fa-handshake {
   border: none;
   box-shadow: 2px 3px 8px lightgrey;
   transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 0.7s ease-out;
+  -webkit-transition: background-color 0.7s ease-out;
   transition: box-shadow 0.7s ease-out;
+  -moz-transition: box-shadow 0.7s ease-out;
+  -webkit-transition: box-shadow 0.7s ease-out;
 }
 .btn:hover {
   background-color: #b389e7;
@@ -93,6 +97,8 @@ footer .fa-handshake {
 .fa-heart_empty, .restaurantselected_heart-empty {
   cursor: pointer;
   transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
 }
 .fa-heart_empty:hover, .restaurantselected_heart-empty:hover {
   color: #9356DC;
@@ -100,12 +106,16 @@ footer .fa-handshake {
 
 .fa-heart_fill, .restaurantselected_heart-fill {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79DA));
+  -moz-background-clip: text;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   cursor: pointer;
   opacity: 0;
   transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
 }
 .fa-heart_fill:hover, .restaurantselected_heart-fill:hover {
   opacity: 1;
@@ -269,9 +279,11 @@ h3 {
   font-size: 23px;
   right: 47px;
   color: #9356DC;
+  -moz-background-clip: text;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .menu_image {
@@ -316,7 +328,8 @@ h3 {
 
 .restaurantselected4 {
   background-image: url("images/Le délice des sens.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .restaurantselected_titre {
@@ -363,50 +376,68 @@ h3 {
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover {
   cursor: pointer;
 }
-.EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .priceandcheck {
-  transform: translateX(0px);
+.EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .check {
+  transform: translateX(-70px);
+  -moz-transform: translateX(-70px);
+  -webkit-transform: translateX(-70px);
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .price1 {
-  transform: translateX(0px);
+  transform: translateX(-70px);
+  -moz-transform: translateX(-70px);
+  -webkit-transform: translateX(-70px);
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .fa-check-circle {
   transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+.EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .nomplat {
+  width: 62%;
+}
+.EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .button_EntréesPlatsDesserts_accompagnement {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts_titre {
   margin-bottom: 2px;
   margin-left: 10px;
   font-weight: bold;
   font-size: 17px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts_accompagnement {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 2px;
   margin-left: 10px;
   font-family: "robotoregular";
   font-size: 14px;
   width: 95%;
+  overflow: visible;
+  white-space: wrap;
+  word-break: keep-all;
 }
 .EntréesPlatsDesserts .priceandcheck {
   position: relative;
   display: flex;
-  width: 120px;
+  margin-left: -75px;
   right: 0%;
-  transition: transform 0.7s ease-out;
   transform: translateX(70px);
+  -moz-transform: translateX(70px);
+  -webkit-transform: translateX(70px);
 }
 .EntréesPlatsDesserts .price1 {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
   width: 50px;
-  transition: transform 1s ease-out;
-}
-.EntréesPlatsDesserts .price {
-  display: flex;
-  align-items: flex-end;
-  margin-right: 25px;
-  font-weight: bold;
+  transition: transform 0.9s ease-out 0.15s;
+  -moz-transition: transform 0.9s ease-out 0.15s;
+  -webkit-transition: transform 0.9s ease-out 0.15s;
+  margin-left: 30px;
+  background-color: white;
 }
 .EntréesPlatsDesserts .check {
   background-color: #99e2d0;
@@ -416,12 +447,19 @@ h3 {
   align-items: center;
   width: 70px;
   font-size: 22px;
+  transition: transform 0.9s ease-out;
+  -moz-transition: transform 0.9s ease-out;
+  -webkit-transition: transform 0.9s ease-out;
 }
 .EntréesPlatsDesserts .check .fa-check-circle {
   background-color: #99e2d0;
   color: white;
-  transition: transform 0.7s ease-out;
+  transition: transform 0.9s ease-out;
+  -moz-transition: transform 0.9s ease-out;
+  -webkit-transition: transform 0.9s ease-out;
   transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
 }
 
 .commander {
@@ -433,6 +471,14 @@ h3 {
 }
 .commander .btn_commander {
   width: 45%;
+}
+
+.nomplat {
+  width: 100%;
+  transition: width 1.05s ease-out;
+  -moz-transition: width 1.05s ease-out;
+  -webkit-transition: width 1.05s ease-out;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

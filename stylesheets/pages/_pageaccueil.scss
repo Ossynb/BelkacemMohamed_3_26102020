@@ -8,14 +8,15 @@
     padding-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
+    
     .location{
         background-color:#DCDCDC ;
         border-top: solid silver;
         padding-top: 10px;
         padding-bottom: 10px;
         font-weight: bold;
-
     }
+
     .location .fas{
         margin-right: 12px;
     }
@@ -38,8 +39,7 @@
 }
 
 .btn_presentation{
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
 
 .fonctionnement{
@@ -152,8 +152,6 @@ h3{
         position: absolute;
         font-size: 23px;  
         right:47px;
-        
-
     }
 
     .fas{
@@ -161,11 +159,11 @@ h3{
         font-size: 23px;
         right:47px; 
         color:$primary_color;
-        
+        -moz-background-clip: text;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-    
+        -moz-text-fill-color: transparent;
     }
 }
 
