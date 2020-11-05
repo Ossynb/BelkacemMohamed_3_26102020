@@ -1,0 +1,76 @@
+
+.loadingspinner_text{
+    margin: auto;
+    background-color: white;
+    animation: heartbeat 1.5s ease 4, chgt-couleur 1.5s ease 0s 4 normal;
+    transform-origin: top;
+  }
+
+  .loadingspinner{
+    animation: trans 4.5s ease ;
+  }
+
+  .opac{
+    opacity:1;
+    animation: opacite 7s linear 1;
+  }
+
+  @keyframes chgt-couleur{
+    0%   {color:black;}
+   10%  {color:$primary_color;}
+   20%  {color:black;}
+   30%  {color:$primary_color;}
+   80%  {color:black;}
+   100% {color:black;}
+ }
+  
+ @keyframes heartbeat{
+   0%   {transform: scale( 1.90 );}
+   10%  {transform: scale( 2 );}
+   20%  {transform: scale( 1.90 );}
+   30%  {transform: scale( 2 );}
+   80%  {transform: scale( 1.90);}
+   100% {transform: scale( 1.90 );}
+ }
+
+ @keyframes trans{
+  0%  { transform:translateY(0) }
+  20% { transform:translateY(300px) }
+  50% { transform:translateY(300px) }
+  100%{ transform:translateY(0) }
+}
+
+@keyframes opacite{
+  0%   {opacity:0;}
+   10%  {opacity:0;}
+   20%  {opacity:0;}
+   30%  {opacity:0;}
+   80%  {opacity:0;}
+   90%  {opacity:0;}
+   100% {opacity:1;}
+}
+
+ 
+.button_Entrées{
+
+  animation: displayprogress 1.5s linear forwards;
+}
+
+.button_Plats{
+
+  animation: displayprogress 4s linear forwards;
+}
+
+.button_Desserts{
+  animation: displayprogress 6.5s linear forwards;
+}
+
+@keyframes displayprogress{
+  0%  {opacity:0;}
+  20% {opacity:0;}
+  50% {opacity:0;}
+  70% {opacity:0.43;}
+  80% {opacity:0.73;}
+  100%{opacity:1;}
+}
+ 
