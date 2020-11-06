@@ -77,12 +77,12 @@ footer .fa-handshake {
 .loadingspinner_text {
   margin: auto;
   background-color: white;
-  animation: heartbeat 1.5s ease 4, chgt-couleur 1.5s ease 0s 4 normal;
+  animation: heartbeat 1.5s ease 2 2s, chgt-couleur 1.5s ease 2 2s normal, widthscale 2s linear 1;
   transform-origin: top;
 }
 
 .loadingspinner {
-  animation: trans 4.5s ease;
+  animation: trans 5s ease;
 }
 
 .opac {
@@ -110,6 +110,17 @@ footer .fa-handshake {
     color: black;
   }
 }
+@keyframes widthscale {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(1.9);
+  }
+}
 @keyframes heartbeat {
   0% {
     transform: scale(1.9);
@@ -134,10 +145,13 @@ footer .fa-handshake {
   0% {
     transform: translateY(0);
   }
-  20% {
+  40% {
     transform: translateY(300px);
   }
-  50% {
+  60% {
+    transform: translateY(300px);
+  }
+  80% {
     transform: translateY(300px);
   }
   100% {

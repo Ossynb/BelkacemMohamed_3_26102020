@@ -2,12 +2,12 @@
 .loadingspinner_text{
     margin: auto;
     background-color: white;
-    animation: heartbeat 1.5s ease 4, chgt-couleur 1.5s ease 0s 4 normal;
+    animation: heartbeat 1.5s ease 2 2s, chgt-couleur 1.5s ease 2 2s normal,widthscale 2s linear 1;
     transform-origin: top;
   }
 
   .loadingspinner{
-    animation: trans 4.5s ease ;
+    animation: trans 5s ease ;
   }
 
   .opac{
@@ -23,6 +23,12 @@
    80%  {color:black;}
    100% {color:black;}
  }
+
+ @keyframes widthscale{
+    0%   {transform: scale( 1.20 );}
+    50%   {transform: scale( 1.60 );}
+    100%   {transform: scale( 1.90 );}
+ }
   
  @keyframes heartbeat{
    0%   {transform: scale( 1.90 );}
@@ -35,13 +41,14 @@
 
  @keyframes trans{
   0%  { transform:translateY(0) }
-  20% { transform:translateY(300px) }
-  50% { transform:translateY(300px) }
+  40% { transform:translateY(300px) }
+  60% { transform:translateY(300px) }
+  80% { transform:translateY(300px) }
   100%{ transform:translateY(0) }
 }
 
 @keyframes opacite{
-  0%   {opacity:0;}
+    0%  {opacity:0;}
    10%  {opacity:0;}
    20%  {opacity:0;}
    30%  {opacity:0;}
