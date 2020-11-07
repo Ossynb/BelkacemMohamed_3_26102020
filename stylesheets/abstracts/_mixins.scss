@@ -1,3 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+
+@mixin backgroundimagemenu($img, $background-size, $background-position) {
+    background-image: url('../images/#{$img}');
+    -moz-background-image: url('../images/#{$img}');
+    -webkit-background-image: url('../images/#{$img}');
+    background-size: $background-size;
+    -moz-background-size: $background-size;
+    -webkit-background-size: $background-size;
+    background-position: $background-position;
+    -moz-background-position: $background-position;
+    -webkit-background-position: $background-position;
+}
+
+@mixin transform ($transforms){
+    transform: $transforms;
+    -moz-transform: $transforms;
+    -webkit-transform: $transforms;
+
+}
+
+@mixin transition ($property, $duration, $time-function){
+    transition: $property $duration $time-function;
+    -moz-transition: $property $duration $time-function;
+    -webkit-transition: $property $duration $time-function;
+}

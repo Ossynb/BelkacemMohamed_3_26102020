@@ -57,22 +57,21 @@
    100% {opacity:1;}
 }
 
- 
 .button_Entrées{
 
-  animation: displayprogress 1.5s linear forwards;
+  animation: displayprogressmenu 1.5s linear forwards;
 }
 
 .button_Plats{
 
-  animation: displayprogress 4s linear forwards;
+  animation: displayprogressmenu 4s linear forwards;
 }
 
 .button_Desserts{
-  animation: displayprogress 6.5s linear forwards;
+  animation: displayprogressmenu 6.5s linear forwards;
 }
 
-@keyframes displayprogress{
+@keyframes displayprogressmenu{
   0%  {opacity:0;}
   20% {opacity:0;}
   50% {opacity:0;}
