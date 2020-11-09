@@ -128,9 +128,7 @@
         align-items: flex-end;
         font-weight: bold;
         width: 50px;
-        transition: transform 0.9s ease-out 0.15s; 
-        -moz-transition: transform 0.9s ease-out 0.15s;
-        -webkit-transition: transform 0.9s ease-out 0.15s;
+        @include transition (transform, 0.9s, ease-out, 0.15s);
         margin-left: 30px;
         background-color: white;   
     }
@@ -143,12 +141,12 @@
         align-items: center;
         width:70px;
         font-size:22px;
-        @include transition (transform, 0.9s, ease-out);
+        @include transition (transform, 0.9s, ease-out, 0s);
         
         .fa-check-circle{
             background-color: $third_color;
             color:white;
-            @include transition (transform, 0.9s, ease-out);
+            @include transition (transform, 0.9s, ease-out, 0s);
             @include transform(rotate(-180deg)) ; 
         }  
     }
@@ -168,9 +166,6 @@
 
     .nomplat{ 
         width: 100%;
-        transition: width 1.05s ease-out;
-        -moz-transition: width 1.05s ease-out;
-        -webkit-transition: width 1.05s ease-out;
-        
+        @include transition (width, 1.05s, ease-out, 0s);
         overflow: hidden;        
     }

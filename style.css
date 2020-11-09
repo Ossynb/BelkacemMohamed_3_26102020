@@ -74,14 +74,14 @@ footer .fa-handshake {
   font-size: 12px;
 }
 
-.loadingspinner_text {
+#loadingspinner_text {
   margin: auto;
   background-color: white;
   animation: heartbeat 1.5s ease 2 2s, chgt-couleur 1.5s ease 2 2s normal, widthscale 2s linear 1;
   transform-origin: top;
 }
 
-.loadingspinner {
+#loadingspinner {
   animation: trans 5s ease;
 }
 
@@ -381,6 +381,7 @@ h3 {
 }
 
 .card_restaurants {
+  position: relative;
   margin: 0px 20px 20px 20px;
   border-radius: 15px;
   overflow: hidden;
@@ -409,12 +410,12 @@ h3 {
 .card_restaurants .far {
   position: absolute;
   font-size: 23px;
-  right: 47px;
+  right: 27px;
 }
 .card_restaurants .fas {
   position: absolute;
   font-size: 23px;
-  right: 47px;
+  right: 27px;
   color: #9356DC;
   -moz-background-clip: text;
   -webkit-background-clip: text;
@@ -608,16 +609,16 @@ h3 {
   align-items: center;
   width: 70px;
   font-size: 22px;
-  transition: transform 0.9s ease-out;
-  -moz-transition: transform 0.9s ease-out;
-  -webkit-transition: transform 0.9s ease-out;
+  transition: transform 0.9s ease-out 0s;
+  -moz-transition: transform 0.9s ease-out 0s;
+  -webkit-transition: transform 0.9s ease-out 0s;
 }
 .EntréesPlatsDesserts .check .fa-check-circle {
   background-color: #99e2d0;
   color: white;
-  transition: transform 0.9s ease-out;
-  -moz-transition: transform 0.9s ease-out;
-  -webkit-transition: transform 0.9s ease-out;
+  transition: transform 0.9s ease-out 0s;
+  -moz-transition: transform 0.9s ease-out 0s;
+  -webkit-transition: transform 0.9s ease-out 0s;
   transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
@@ -636,10 +637,104 @@ h3 {
 
 .nomplat {
   width: 100%;
-  transition: width 1.05s ease-out;
-  -moz-transition: width 1.05s ease-out;
-  -webkit-transition: width 1.05s ease-out;
+  transition: width 1.05s ease-out 0s;
+  -moz-transition: width 1.05s ease-out 0s;
+  -webkit-transition: width 1.05s ease-out 0s;
   overflow: hidden;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .card_restaurantsligne {
+    margin: auto;
+    max-width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #restaurants h3 {
+    text-align: center;
+  }
+
+  .card_restaurantsligne {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card_restaurants {
+    width: 35%;
+  }
+
+  .button {
+    width: 60%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 968px) {
+  .presentation h1 {
+    font-size: 36px;
+  }
+
+  .presentation p {
+    font-size: 25px;
+  }
+
+  .fonctionnement h3, #restaurants h3 {
+    font-size: 33px;
+  }
+
+  .fonctionnement p {
+    font-size: 20px;
+  }
+
+  header h2 {
+    font-size: 42px;
+  }
+
+  footer h4 {
+    font-size: 32px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+
+  .EntréesPlatsDesserts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurantselected_titre {
+    justify-content: center;
+  }
+
+  .button_EntréesPlatsDesserts {
+    min-width: 70%;
+  }
+
+  .restaurantselected_heart-empty {
+    position: absolute;
+    right: 30%;
+    top: 322px;
+  }
+
+  .restaurantselected_heart-fill {
+    position: absolute;
+    right: 30%;
+    top: 322px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

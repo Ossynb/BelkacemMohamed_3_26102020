@@ -1,12 +1,12 @@
 
-.loadingspinner_text{
+  #loadingspinner_text{
     margin: auto;
     background-color: white;
     animation: heartbeat 1.5s ease 2 2s, chgt-couleur 1.5s ease 2 2s normal,widthscale 2s linear 1;
     transform-origin: top;
   }
 
-  .loadingspinner{
+  #loadingspinner{
     animation: trans 5s ease ;
   }
 

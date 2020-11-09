@@ -116,6 +116,7 @@ h3{
     font-size: 23px;
 }
 .card_restaurants{
+    position: relative;
     margin: 0px 20px 20px 20px;
     border-radius: 15px;
     overflow: hidden;
@@ -148,13 +149,13 @@ h3{
     .far{
         position: absolute;
         font-size: 23px;  
-        right:47px;
+        right:27px;
     }
 
     .fas{
         position:absolute;
         font-size: 23px;
-        right:47px; 
+        right:27px; 
         color:$primary_color;
         -moz-background-clip: text;
         -webkit-background-clip: text;

@@ -1,0 +1,104 @@
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .card_restaurantsligne{
+        margin:auto;
+        max-width: 70%;
+    }
+    
+}
+
+@media(min-width:768px) {
+
+    .fonctionnement{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #restaurants h3{
+        text-align: center;
+    }
+
+    .card_restaurantsligne{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .card_restaurants{
+        width: 35%;
+    }
+
+    .button{
+        width: 60%;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(min-width:968px) {
+
+    .presentation h1{
+        font-size: 36px;
+    }
+
+    .presentation p{
+        font-size: 25px;
+    }
+
+    .fonctionnement h3, #restaurants h3{
+       font-size:33px;
+    }
+    .fonctionnement p{
+        font-size: 20px;
+    }
+
+    header h2{
+        font-size:42px;
+    }
+
+    footer h4 { 
+        font-size:32px;
+    }
+
+    footer p {
+        font-size:20px;
+    } 
+
+    .EntréesPlatsDesserts{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .restaurantselected_titre{
+        justify-content: center;
+    
+       
+    }
+
+    .button_EntréesPlatsDesserts{
+        min-width: 70%;
+    }
+
+    .restaurantselected_heart-empty{
+        position: absolute;
+        right:30%;
+        top:322px;
+        
+    }
+    
+    .restaurantselected_heart-fill{
+        position: absolute;
+        right: 30%;
+        top:322px;
+        
+    }
+}

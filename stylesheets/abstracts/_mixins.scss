@@ -21,8 +21,10 @@
 
 }
 
-@mixin transition ($property, $duration, $time-function){
-    transition: $property $duration $time-function;
-    -moz-transition: $property $duration $time-function;
-    -webkit-transition: $property $duration $time-function;
+@mixin transition ($property, $duration, $time-function, $delay){
+    transition: $property $duration $time-function $delay;
+    -moz-transition: $property $duration $time-function $delay;
+    -webkit-transition: $property $duration $time-function $delay;
 }
+
+
