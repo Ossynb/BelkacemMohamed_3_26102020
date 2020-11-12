@@ -77,7 +77,8 @@ footer .fa-handshake {
 #loadingspinner_text {
   margin: auto;
   background-color: white;
-  animation: heartbeat 1.5s ease 2 2s, chgt-couleur 1.5s ease 2 2s normal, widthscale 2s linear 1;
+  transition: all;
+  animation: heartbeat 1.5s ease 2 2s, widthscale 2s linear 1;
   transform-origin: top;
 }
 
@@ -90,26 +91,6 @@ footer .fa-handshake {
   animation: opacite 7s linear 1;
 }
 
-@keyframes chgt-couleur {
-  0% {
-    color: black;
-  }
-  10% {
-    color: #9356DC;
-  }
-  20% {
-    color: black;
-  }
-  30% {
-    color: #9356DC;
-  }
-  80% {
-    color: black;
-  }
-  100% {
-    color: black;
-  }
-}
 @keyframes widthscale {
   0% {
     transform: scale(1.2);
@@ -124,21 +105,27 @@ footer .fa-handshake {
 @keyframes heartbeat {
   0% {
     transform: scale(1.9);
+    color: black;
   }
   10% {
     transform: scale(2);
+    color: #9356DC;
   }
   20% {
     transform: scale(1.9);
+    color: black;
   }
   30% {
     transform: scale(2);
+    color: #9356DC;
   }
   80% {
     transform: scale(1.9);
+    color: black;
   }
   100% {
     transform: scale(1.9);
+    color: black;
   }
 }
 @keyframes trans {
@@ -181,16 +168,44 @@ footer .fa-handshake {
     opacity: 1;
   }
 }
-.button_Entrées {
+.button_Entrées1 {
+  animation: displayprogressmenu 0.5s linear forwards;
+}
+
+.button_Entrées2 {
+  animation: displayprogressmenu 1s linear forwards;
+}
+
+.button_Entrées3 {
   animation: displayprogressmenu 1.5s linear forwards;
 }
 
-.button_Plats {
+.button_Entrées4 {
+  animation: displayprogressmenu 2s linear forwards;
+}
+
+.button_Plats1 {
+  animation: displayprogressmenu 2.5s linear forwards;
+}
+
+.button_Plats2 {
+  animation: displayprogressmenu 3s linear forwards;
+}
+
+.button_Plats3 {
+  animation: displayprogressmenu 3.5s linear forwards;
+}
+
+.button_Desserts1 {
   animation: displayprogressmenu 4s linear forwards;
 }
 
-.button_Desserts {
-  animation: displayprogressmenu 6.5s linear forwards;
+.button_Desserts2 {
+  animation: displayprogressmenu 4.5s linear forwards;
+}
+
+.button_Desserts3 {
+  animation: displayprogressmenu 5s linear forwards;
 }
 
 @keyframes displayprogressmenu {
@@ -247,7 +262,6 @@ footer .fa-handshake {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79DA));
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   cursor: pointer;
@@ -306,6 +320,7 @@ footer .fa-handshake {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  font-family: "robotoregular";
 }
 
 .btn_presentation {
@@ -323,18 +338,18 @@ footer .fa-handshake {
 .fonctionnement h3 {
   font-size: 23px;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 35px;
   margin-bottom: 15px;
 }
 .fonctionnement p {
   background-color: whitesmoke;
   font-weight: bolder;
-  border-radius: 18px;
+  border-radius: 20px;
   width: 100%;
   padding: 30px;
-  margin: 10px 20px 10px 20px;
-  box-shadow: 5px 5px 13px whitesmoke;
+  margin: 10px 25px 10px 25px;
+  box-shadow: 5px 5px 5px lightgrey;
 }
 
 .button {
@@ -376,7 +391,7 @@ footer .fa-handshake {
 }
 
 h3 {
-  margin-left: 10px;
+  margin-left: 20px;
   font-size: 23px;
 }
 
@@ -419,7 +434,6 @@ h3 {
   color: #9356DC;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -578,7 +592,6 @@ h3 {
   font-size: 14px;
   width: 95%;
   overflow: visible;
-  white-space: wrap;
   word-break: keep-all;
 }
 .EntréesPlatsDesserts .priceandcheck {
@@ -656,6 +669,10 @@ h3 {
     align-items: center;
   }
 
+  .button {
+    margin: auto;
+  }
+
   #restaurants h3 {
     text-align: center;
   }
@@ -687,6 +704,10 @@ h3 {
 
   .presentation p {
     font-size: 25px;
+  }
+
+  .button {
+    margin: auto;
   }
 
   .fonctionnement h3, #restaurants h3 {
@@ -734,6 +755,10 @@ h3 {
     position: absolute;
     right: 30%;
     top: 322px;
+  }
+
+  .btn_commander {
+    font-size: 18px;
   }
 }
 

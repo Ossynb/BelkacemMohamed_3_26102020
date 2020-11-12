@@ -2,7 +2,8 @@
   #loadingspinner_text{
     margin: auto;
     background-color: white;
-    animation: heartbeat 1.5s ease 2 2s, chgt-couleur 1.5s ease 2 2s normal,widthscale 2s linear 1;
+    transition:all;
+    animation:heartbeat 1.5s ease 2 2s, widthscale 2s linear 1;
     transform-origin: top;
   }
 
@@ -15,15 +16,6 @@
     animation: opacite 7s linear 1;
   }
 
-  @keyframes chgt-couleur{
-    0%   {color:black;}
-   10%  {color:$primary_color;}
-   20%  {color:black;}
-   30%  {color:$primary_color;}
-   80%  {color:black;}
-   100% {color:black;}
- }
-
  @keyframes widthscale{
     0%   {transform: scale( 1.20 );}
     50%   {transform: scale( 1.60 );}
@@ -31,12 +23,33 @@
  }
   
  @keyframes heartbeat{
-   0%   {transform: scale( 1.90 );}
-   10%  {transform: scale( 2 );}
-   20%  {transform: scale( 1.90 );}
-   30%  {transform: scale( 2 );}
-   80%  {transform: scale( 1.90);}
-   100% {transform: scale( 1.90 );}
+   0%   {
+     transform: scale( 1.90 );
+     color:black;
+  }
+
+   10%  {
+     transform: scale( 2 );
+     color:$primary_color;}
+
+   20%  {
+     transform: scale( 1.90 );
+     color:black;
+    }
+
+   30%  {
+     transform: scale( 2 );
+     color:$primary_color;
+    }
+
+   80%  {
+     transform: scale( 1.90);
+     color:black;
+    }
+   100% {
+     transform: scale( 1.90 );
+     color:black;
+    }
  }
 
  @keyframes trans{
@@ -57,18 +70,37 @@
    100% {opacity:1;}
 }
 
-.button_Entrées{
-
+.button_Entrées1{
+  animation: displayprogressmenu 0.5s linear forwards;
+}
+.button_Entrées2{
+  animation: displayprogressmenu 1s linear forwards;
+}
+.button_Entrées3{
   animation: displayprogressmenu 1.5s linear forwards;
 }
-
-.button_Plats{
-
-  animation: displayprogressmenu 4s linear forwards;
+.button_Entrées4{
+  animation: displayprogressmenu 2s linear forwards;
 }
 
-.button_Desserts{
-  animation: displayprogressmenu 6.5s linear forwards;
+.button_Plats1{
+  animation: displayprogressmenu 2.5s linear forwards;
+}
+.button_Plats2{
+  animation: displayprogressmenu 3s linear forwards;
+}
+.button_Plats3{
+  animation: displayprogressmenu 3.5s linear forwards;
+}
+
+.button_Desserts1{
+  animation: displayprogressmenu 4s linear forwards;
+}
+.button_Desserts2{
+  animation: displayprogressmenu 4.5s linear forwards;
+}
+.button_Desserts3{
+  animation: displayprogressmenu 5s linear forwards;
 }
 
 @keyframes displayprogressmenu{

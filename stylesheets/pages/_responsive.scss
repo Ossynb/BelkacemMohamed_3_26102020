@@ -15,6 +15,10 @@
         align-items: center;
     }
 
+    .button{
+        margin: auto ;
+    }
+
     #restaurants h3{
         text-align: center;
     }
@@ -22,7 +26,6 @@
     .card_restaurantsligne{
         display: flex;
         justify-content: center;
-
     }
 
     .card_restaurants{
@@ -51,6 +54,11 @@
         font-size: 25px;
     }
 
+    
+    .button{
+        margin: auto ;
+    }
+
     .fonctionnement h3, #restaurants h3{
        font-size:33px;
     }
@@ -71,7 +79,6 @@
     } 
 
     .EntréesPlatsDesserts{
-
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -80,8 +87,6 @@
     
     .restaurantselected_titre{
         justify-content: center;
-    
-       
     }
 
     .button_EntréesPlatsDesserts{
@@ -91,14 +96,18 @@
     .restaurantselected_heart-empty{
         position: absolute;
         right:30%;
-        top:322px;
-        
+        top:322px;   
     }
     
     .restaurantselected_heart-fill{
         position: absolute;
         right: 30%;
-        top:322px;
-        
+        top:322px;   
+    }
+
+    
+
+    .btn_commander{
+        font-size: 18px;
     }
 }
