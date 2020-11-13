@@ -81,6 +81,9 @@ footer .fa-handshake {
   animation: heartbeat 1.5s ease 2 2s, widthscale 2s linear 1;
   transform-origin: top;
 }
+#loadingspinner_text a {
+  animation: heartbeat 1.5s ease 2 2s;
+}
 
 #loadingspinner {
   animation: trans 5s ease;
@@ -105,7 +108,7 @@ footer .fa-handshake {
 @keyframes heartbeat {
   0% {
     transform: scale(1.9);
-    color: #9356DC;
+    color: black;
   }
   10% {
     transform: scale(2);
@@ -389,7 +392,7 @@ footer .fa-handshake {
 }
 .button .fa-store {
   left: -46px;
-  color: grey;
+  color: #9356DC;
 }
 
 #restaurants {
@@ -469,9 +472,9 @@ h3 {
 }
 
 .restaurantselected1 {
-  background-image: url("../images/Lapalettedugout.jpg");
-  -moz-background-image: url("../images/Lapalettedugout.jpg");
   -webkit-background-image: url("../images/Lapalettedugout.jpg");
+  -moz-background-image: url("../images/Lapalettedugout.jpg");
+  background-image: url("../images/Lapalettedugout.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -481,9 +484,9 @@ h3 {
 }
 
 .restaurantselected2 {
-  background-image: url("../images/Lanoteenchantee.jpg");
-  -moz-background-image: url("../images/Lanoteenchantee.jpg");
   -webkit-background-image: url("../images/Lanoteenchantee.jpg");
+  -moz-background-image: url("../images/Lanoteenchantee.jpg");
+  background-image: url("../images/Lanoteenchantee.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -493,9 +496,9 @@ h3 {
 }
 
 .restaurantselected3 {
-  background-image: url("../images/Alafrancaise.jpg");
-  -moz-background-image: url("../images/Alafrancaise.jpg");
   -webkit-background-image: url("../images/Alafrancaise.jpg");
+  -moz-background-image: url("../images/Alafrancaise.jpg");
+  background-image: url("../images/Alafrancaise.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -505,9 +508,9 @@ h3 {
 }
 
 .restaurantselected4 {
-  background-image: url("../images/Ledelicedessens.jpg");
-  -moz-background-image: url("../images/Ledelicedessens.jpg");
   -webkit-background-image: url("../images/Ledelicedessens.jpg");
+  -moz-background-image: url("../images/Ledelicedessens.jpg");
+  background-image: url("../images/Ledelicedessens.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;

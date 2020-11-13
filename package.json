@@ -9,5 +9,5 @@
   },
   "author": "",
   "license": "ISC",
-  "browserslist":[ "safari 5.1.7", "defaults", "safari"]
+  "browserslist":[ "last 4 versions", "defaults", "safari"]
 }

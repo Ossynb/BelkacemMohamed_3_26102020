@@ -6,6 +6,9 @@
     animation:heartbeat 1.5s ease 2 2s, widthscale 2s linear 1;
     transform-origin: top;
     
+        a {
+          animation:heartbeat 1.5s ease 2 2s;
+        }
   }
 
   #loadingspinner{
@@ -19,37 +22,34 @@
 
  @keyframes widthscale{
     0%   {transform: scale( 1.20 );}
-    50%   {transform: scale( 1.60 );}
-    100%   {transform: scale( 1.90 );}
+    50%  {transform: scale( 1.60 );}
+    100% {transform: scale( 1.90 );}
  }
   
  @keyframes heartbeat{
    0%   {
-     transform: scale( 1.90 );
-     color:$primary_color;
+      transform: scale( 1.90 );
+      color:black;
   }
-
-   10%  {
-     transform: scale( 2 );
-     color:$primary_color;}
-
+   10%  {    
+      transform: scale( 2 );
+      color:$primary_color;
+     }
    20%  {
-     transform: scale( 1.90 );
-     color:black;
+      transform: scale( 1.90 );
+      color:black;
     }
-
    30%  {
-     transform: scale( 2 );
-     color:$primary_color;
+      transform: scale( 2 );
+      color:$primary_color;
     }
-
    80%  {
-     transform: scale( 1.90);
-     color:black;
+      transform: scale( 1.90);
+      color:black;
     }
    100% {
-     transform: scale( 1.90 );
-     color:black;
+      transform: scale( 1.90 );
+      color:black;
     }
  }
 
