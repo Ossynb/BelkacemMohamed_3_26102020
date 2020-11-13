@@ -79,8 +79,9 @@
             }
             
             .fa-check-circle{
-                    @include transform(rotate(360deg)) ;         
+                @include transform(rotate(360deg)) ;         
             }
+
             .nomplat{
                 width: 62%;     
             }
