@@ -24,6 +24,7 @@
 }
 
 .restaurantselected_titre{
+    
     display:flex;
     justify-content: space-between;
     align-items: baseline;
@@ -36,7 +37,8 @@
     
     h1{
         font-family: "shrikhand";
-        font-size: 30px;  
+        font-size: 30px; 
+        padding-right:35px; 
     }
 
 }

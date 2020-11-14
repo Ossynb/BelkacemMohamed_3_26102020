@@ -156,6 +156,7 @@ h3{
         position: absolute;
         font-size: 23px;  
         right:27px;
+        
     }
 
     .fas{
@@ -163,10 +164,12 @@ h3{
         font-size: 23px;
         right:27px; 
         color:$primary_color;
+        background-clip: text;
         -moz-background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+        
     }
 }
 

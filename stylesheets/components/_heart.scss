@@ -11,6 +11,7 @@
 
 .fa-heart_fill, .restaurantselected_heart-fill{
     background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
+    background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,6 +43,8 @@
 }
 
 .fa-heart_empty{
-    color: grey;
-    font-weight: 100;
+    color: rgb(66, 66, 66);
+    
+    
+    
 }

@@ -263,6 +263,7 @@ footer .fa-handshake {
 
 .fa-heart_fill, .restaurantselected_heart-fill {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79DA));
+  background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -293,8 +294,7 @@ footer .fa-handshake {
 }
 
 .fa-heart_empty {
-  color: grey;
-  font-weight: 100;
+  color: #424242;
 }
 
 .presentation {
@@ -443,6 +443,7 @@ h3 {
   font-size: 23px;
   right: 27px;
   color: #9356DC;
+  background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -533,6 +534,7 @@ h3 {
 .restaurantselected_titre h1 {
   font-family: "shrikhand";
   font-size: 30px;
+  padding-right: 35px;
 }
 
 .EntréesPlatsDesserts {
