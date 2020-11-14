@@ -121,7 +121,7 @@
         position: relative;
         display: flex;
         margin-left: -75px;
-        right:0%;
+        right:0;
         @include transform(translateX(70px)) ; 
     }
 

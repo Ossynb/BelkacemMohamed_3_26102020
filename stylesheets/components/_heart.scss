@@ -1,8 +1,8 @@
 .fa-heart_empty, .restaurantselected_heart-empty{
     cursor: pointer;
-    -moz-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: color 0.7s ease-out;
+    -webkit-transition: color 0.7s ease-out;
+    transition: color 0.7s ease-out;
 
     &:hover{
         color:$primary_color;
@@ -18,9 +18,9 @@
     -moz-text-fill-color: transparent;
     cursor: pointer;
     opacity: 0; 
-    -moz-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: opacity 0.7s ease-out;
+    -webkit-transition: opacity 0.7s ease-out;
+    transition: opacity 0.7s ease-out;
         &:hover{
         opacity: 1;
     }
