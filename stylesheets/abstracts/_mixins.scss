@@ -3,29 +3,28 @@
 // -----------------------------------------------------------------------------
 
 @mixin backgroundimagemenu( $img, $background-size, $background-position) {
-    
-    -webkit-background-image: url(images/#{$img});
-    -moz-background-image: url(images/#{$img});
-    background-image: url(images/#{$img});
     background-size: $background-size;
     -moz-background-size: $background-size;
     -webkit-background-size: $background-size;
     background-position: $background-position;
     -moz-background-position: $background-position;
     -webkit-background-position: $background-position;
+    -webkit-background-image: url(images/#{$img});
+    -moz-background-image: url(images/#{$img});
+    background-image: url(images/#{$img});
 }
 
 @mixin transform ($transforms){
-    transform: $transforms;
     -moz-transform: $transforms;
     -webkit-transform: $transforms;
+    transform: $transforms;
 
 }
 
 @mixin transition ($property, $duration, $time-function, $delay){
-    transition: $property $duration $time-function $delay;
     -moz-transition: $property $duration $time-function $delay;
     -webkit-transition: $property $duration $time-function $delay;
+    transition: $property $duration $time-function $delay;
 }
 
 
