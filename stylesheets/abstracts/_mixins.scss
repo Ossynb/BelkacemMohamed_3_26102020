@@ -18,6 +18,9 @@
     -moz-transform: $transforms;
     -webkit-transform: $transforms;
     transform: $transforms;
+    transform: -webkit-$transforms;
+    -webkit-transform:-webkit-$transforms;
+
 
 }
 
@@ -25,6 +28,8 @@
     -moz-transition: $property $duration $time-function $delay;
     -webkit-transition: $property $duration $time-function $delay;
     transition: $property $duration $time-function $delay;
+    transition: -webkit-$property $duration $time-function $delay;
+    -webkit-transition:-webkit-$property $duration $time-function $delay;
 }
 
 
