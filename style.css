@@ -253,9 +253,9 @@ footer .fa-handshake {
 
 .fa-heart_empty, .restaurantselected_heart-empty {
   cursor: pointer;
-  -moz-transition: color 0.7s ease-out;
-  -webkit-transition: color 0.7s ease-out;
-  transition: color 0.7s ease-out;
+  -moz-transition: color 0.7s ease-out 0s;
+  -webkit-transition: color 0.7s ease-out 0s;
+  transition: color 0.7s ease-out 0s;
 }
 .fa-heart_empty:hover, .restaurantselected_heart-empty:hover {
   color: #9356DC;
@@ -270,9 +270,9 @@ footer .fa-handshake {
   -moz-text-fill-color: transparent;
   cursor: pointer;
   opacity: 0;
-  -moz-transition: opacity 0.7s ease-out;
-  -webkit-transition: opacity 0.7s ease-out;
-  transition: opacity 0.7s ease-out;
+  -moz-transition: opacity 0.7s ease-out 0s;
+  -webkit-transition: opacity 0.7s ease-out 0s;
+  transition: opacity 0.7s ease-out 0s;
 }
 .fa-heart_fill:hover, .restaurantselected_heart-fill:hover {
   opacity: 1;
