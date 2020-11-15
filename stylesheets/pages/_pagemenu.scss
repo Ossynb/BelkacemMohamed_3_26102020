@@ -24,7 +24,6 @@
 }
 
 .restaurantselected_titre{
-    
     display:flex;
     justify-content: space-between;
     align-items: baseline;
@@ -73,15 +72,15 @@
             cursor: pointer;
 
             .check {
-                @include transform(translateX(-70px)) ;
+                @include transform(translateX(-70px));
             }
 
             .price1{
-                @include transform(translateX(-70px)) ;
+                @include transform(translateX(-70px));
             }
             
             .fa-check-circle{
-                @include transform(rotate(360deg)) ;         
+                @include transform(rotate(360deg));         
             }
 
             .nomplat{
@@ -122,7 +121,7 @@
         display: flex;
         margin-left: -75px;
         right:0;
-        @include transform(translateX(70px)) ; 
+        @include transform(translateX(70px)); 
     }
 
     .price1{
@@ -130,7 +129,7 @@
         align-items: flex-end;
         font-weight: bold;
         width: 50px;
-        @include transition (transform, 0.9s, ease-out, 0.15s);
+        @include transition(transform, 0.9s, ease-out, 0.15s);
         margin-left: 30px;
         background-color: white;   
     }
@@ -143,12 +142,12 @@
         align-items: center;
         width:70px;
         font-size:22px;
-        @include transition (transform, 0.9s, ease-out, 0s);
+        @include transition(transform, 0.9s, ease-out, 0s);
         
         .fa-check-circle{
             background-color: $third_color;
             color:white;
-            @include transition (transform, 0.9s, ease-out, 0s);
+            @include transition(transform, 0.9s, ease-out, 0s);
             @include transform(rotate(-180deg)) ; 
         }  
     }

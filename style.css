@@ -239,12 +239,12 @@ footer .fa-handshake {
   border-radius: 40px;
   border: none;
   box-shadow: 2px 3px 8px lightgrey;
-  transition: background-color 0.7s ease-out;
-  -moz-transition: background-color 0.7s ease-out;
-  -webkit-transition: background-color 0.7s ease-out;
-  transition: box-shadow 0.7s ease-out;
-  -moz-transition: box-shadow 0.7s ease-out;
-  -webkit-transition: box-shadow 0.7s ease-out;
+  -moz-transition: background-color 0.7s ease-out 0s;
+  -webkit-transition: background-color 0.7s ease-out 0s;
+  transition: background-color 0.7s ease-out 0s;
+  -moz-transition: box-shadow 0.7s ease-out 0s;
+  -webkit-transition: box-shadow 0.7s ease-out 0s;
+  transition: box-shadow 0.7s ease-out 0s;
 }
 .btn:hover {
   background-color: #b389e7;
@@ -272,8 +272,6 @@ footer .fa-handshake {
   opacity: 0;
   -moz-transition: opacity 0.7s ease-out;
   -webkit-transition: opacity 0.7s ease-out;
-  -webkit-transition: -webkit-opacity 0.7s ease-out;
-  transition: -webkit-opacity 0.7s ease-out;
   transition: opacity 0.7s ease-out;
 }
 .fa-heart_fill:hover, .restaurantselected_heart-fill:hover {
@@ -571,22 +569,16 @@ h3 {
   -moz-transform: translateX(-70px);
   -webkit-transform: translateX(-70px);
   transform: translateX(-70px);
-  transform: -webkit- translateX(-70px);
-  -webkit-transform: -webkit- translateX(-70px);
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .price1 {
   -moz-transform: translateX(-70px);
   -webkit-transform: translateX(-70px);
   transform: translateX(-70px);
-  transform: -webkit- translateX(-70px);
-  -webkit-transform: -webkit- translateX(-70px);
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .fa-check-circle {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
-  transform: -webkit- rotate(360deg);
-  -webkit-transform: -webkit- rotate(360deg);
 }
 .EntréesPlatsDesserts .button_EntréesPlatsDesserts:hover .nomplat {
   width: 62%;
@@ -623,8 +615,6 @@ h3 {
   -moz-transform: translateX(70px);
   -webkit-transform: translateX(70px);
   transform: translateX(70px);
-  transform: -webkit- translateX(70px);
-  -webkit-transform: -webkit- translateX(70px);
 }
 .EntréesPlatsDesserts .price1 {
   display: flex;
@@ -634,8 +624,6 @@ h3 {
   -moz-transition: transform 0.9s ease-out 0.15s;
   -webkit-transition: transform 0.9s ease-out 0.15s;
   transition: transform 0.9s ease-out 0.15s;
-  transition: -webkit- transform 0.9s ease-out 0.15s;
-  -webkit-transition: -webkit- transform 0.9s ease-out 0.15s;
   margin-left: 30px;
   background-color: white;
 }
@@ -650,8 +638,6 @@ h3 {
   -moz-transition: transform 0.9s ease-out 0s;
   -webkit-transition: transform 0.9s ease-out 0s;
   transition: transform 0.9s ease-out 0s;
-  transition: -webkit- transform 0.9s ease-out 0s;
-  -webkit-transition: -webkit- transform 0.9s ease-out 0s;
 }
 .EntréesPlatsDesserts .check .fa-check-circle {
   background-color: #99e2d0;
@@ -659,13 +645,9 @@ h3 {
   -moz-transition: transform 0.9s ease-out 0s;
   -webkit-transition: transform 0.9s ease-out 0s;
   transition: transform 0.9s ease-out 0s;
-  transition: -webkit- transform 0.9s ease-out 0s;
-  -webkit-transition: -webkit- transform 0.9s ease-out 0s;
   -moz-transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
-  transform: -webkit- rotate(-180deg);
-  -webkit-transform: -webkit- rotate(-180deg);
 }
 
 .commander {
@@ -684,8 +666,6 @@ h3 {
   -moz-transition: width 1.05s ease-out 0s;
   -webkit-transition: width 1.05s ease-out 0s;
   transition: width 1.05s ease-out 0s;
-  transition: -webkit- width 1.05s ease-out 0s;
-  -webkit-transition: -webkit- width 1.05s ease-out 0s;
   overflow: hidden;
 }
 

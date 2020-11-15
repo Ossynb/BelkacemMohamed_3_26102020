@@ -20,8 +20,6 @@
     opacity: 0; 
     -moz-transition: opacity 0.7s ease-out;
     -webkit-transition: opacity 0.7s ease-out;
-    -webkit-transition: -webkit-opacity 0.7s ease-out;
-    transition: -webkit-opacity 0.7s ease-out;
     transition: opacity 0.7s ease-out;
     
         &:hover{
