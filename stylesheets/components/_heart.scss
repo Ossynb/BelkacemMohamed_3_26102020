@@ -1,3 +1,6 @@
+// -----------------------------------------------------------------------------
+//                                  Composant heart
+// -----------------------------------------------------------------------------
 .fa-heart_empty, .restaurantselected_heart-empty{
     cursor: pointer;
     @include transition(color, 0.7s, ease-out, 0s);
@@ -23,18 +26,14 @@
     }
 }
 
-.restaurantselected_heart-empty{
+.restaurantselected_heart-empty, .restaurantselected_heart-fill{
     position: absolute;
-    font-size:28px;
+    font-size:26px;
     right: 25px;
-    top :307px;
+    top :314px;
 }
 
 .restaurantselected_heart-fill{
-    position: absolute;
-    font-size: 28px;
-    right: 25px;
-    top: 307px;
     color:$primary_color;   
 }
 

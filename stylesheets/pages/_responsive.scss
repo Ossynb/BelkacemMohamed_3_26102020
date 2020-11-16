@@ -1,13 +1,47 @@
+// -----------------------------------------------------------------------------
+//                                  Responsive
+// -----------------------------------------------------------------------------
 
-@media (min-width: 481px) and (max-width: 767px) {
+
+@media (max-width:321px ){
+
+    .restaurantselected_heart-empty, .restaurantselected_heart-fill{
+        position: absolute;
+        font-size:26px;
+        right: 5px;
+        top :312px;
+    }
+ 
+    .fonctionnement .fas{
+        text-align: right;  
+    }
+
+     #section .button_EntréesPlatsDesserts:hover{
+
+        .nomplat{
+            width: 50%;
+        }
+    }
+
+    .priceandcheck .price1{
+        margin-left: 0px;
+    }
+
+    .button_EntréesPlatsDesserts_titre{   
+        hyphens: manual; 
+          
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    
     .card_restaurantsligne{
         margin:auto;
         max-width: 70%;
-    }
-    
+    } 
 }
 
-@media(min-width:768px) {
+@media(min-width:768px){
 
     .fonctionnement{
         display: flex;
@@ -44,7 +78,7 @@
     }
 }
 
-@media(min-width:968px) {
+@media(min-width:968px){
 
     .presentation h1{
         font-size: 36px;
@@ -93,18 +127,11 @@
         min-width: 70%;
     }
 
-    .restaurantselected_heart-empty{
+    .restaurantselected_heart-empty,.restaurantselected_heart-fill {
         position: absolute;
         right:30%;
-        top:322px;   
+        top:331px;   
     }
-    
-    .restaurantselected_heart-fill{
-        position: absolute;
-        right: 30%;
-        top:322px;   
-    }
-
     
 
     .btn_commander{

@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
+//                                  Composant Button
 // -----------------------------------------------------------------------------
 
 .btn{
@@ -10,6 +10,7 @@
     border-radius: 40px;
     border:none ;
     box-shadow: 2px 3px 8px $shadow_color;
+    cursor: pointer;
     @include transition (background-color, 0.7s, ease-out, 0s);
     @include transition (box-shadow, 0.7s, ease-out, 0s);
     

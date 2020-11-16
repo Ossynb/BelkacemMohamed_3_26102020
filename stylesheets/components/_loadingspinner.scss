@@ -1,3 +1,8 @@
+// -----------------------------------------------------------------------------
+//                 Animation Loadingspinner et apparition plat en décalage
+                                    
+// -----------------------------------------------------------------------------
+
 
   #loadingspinner_text{
     margin: auto;
@@ -7,7 +12,7 @@
     transform-origin: top;
     
         a {
-          animation:heartbeat 1.5s ease 2 2s;
+          animation:heartbeatcolor 1.5s ease 2 2s;
         }
   }
 
@@ -27,31 +32,22 @@
  }
   
  @keyframes heartbeat{
-   0%   {
-      transform: scale( 1.90 );
-      color:black;
-  }
-   10%  {    
-      transform: scale( 2 );
-      color:$primary_color;
-     }
-   20%  {
-      transform: scale( 1.90 );
-      color:black;
-    }
-   30%  {
-      transform: scale( 2 );
-      color:$primary_color;
-    }
-   80%  {
-      transform: scale( 1.90);
-      color:black;
-    }
-   100% {
-      transform: scale( 1.90 );
-      color:black;
-    }
+   0%   {transform: scale( 1.90 );}
+   10%  {transform: scale( 2 );}
+   20%  {transform: scale( 1.90 );}
+   30%  {transform: scale( 2 );}
+   80%  {transform: scale( 1.90);}
+   100% {transform: scale( 1.90 );}
  }
+
+ @keyframes heartbeatcolor{
+  0%   {color:black;}
+  10%  {color:$primary_color;}
+  20%  {color:black;}
+  30%  {color:$primary_color;}
+  80%  {color:black;}
+  100% {color:black;}
+}
 
  @keyframes trans{
   0%  { transform:translateY(0) }

@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
+//                              Les mixins
 // -----------------------------------------------------------------------------
 
 @mixin backgroundimagemenu( $img, $background-size, $background-position) {
@@ -18,15 +18,12 @@
     -moz-transform: $transforms;
     -webkit-transform: $transforms;
     transform: $transforms;
-    
-
 }
 
 @mixin transition ($property, $duration, $time-function, $delay){
     -moz-transition: $property $duration $time-function $delay;
     -webkit-transition: $property $duration $time-function $delay;
-    transition: $property $duration $time-function $delay;
-    
+    transition: $property $duration $time-function $delay;   
 }
 
 
