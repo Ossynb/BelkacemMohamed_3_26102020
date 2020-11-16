@@ -4,7 +4,7 @@
 
 
 @media (max-width:321px ){
-
+   
     .fonctionnement .fas{
         text-align: right;  
     }
@@ -23,6 +23,16 @@
     .button_EntréesPlatsDesserts_titre{   
         hyphens: manual; 
           
+    }
+}
+
+@media (max-width:352px){
+    #section h1{
+        font-size: 26px;
+    }
+    .restaurantselected_heart-empty, .restaurantselected_heart-fill{
+        font-size: 24px;
+        top :317px;
     }
 }
 
