@@ -16,6 +16,6 @@
     
     &:hover{
         background-color: lighten($color: $primary_color, $amount: 12);
-        box-shadow:2px 3px 8px black;
+        box-shadow:2px 3px 8px darken($color: $shadow_color, $amount: 100);
     }
 }

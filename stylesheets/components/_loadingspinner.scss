@@ -8,21 +8,21 @@
     margin: auto;
     background-color: white;
     transition:all;
-    animation:heartbeat 1.5s ease 2 2s, widthscale 2s linear 1;
+    animation:heartbeat 1.5s ease 2 2.2s, widthscale 2s linear 1 0.2s;
     transform-origin: top;
     
         a {
-          animation:heartbeatcolor 1.5s ease 2 2s;
+          animation:heartbeatcolor 1.5s ease 2 2.2s;
         }
   }
 
   #loadingspinner{
-    animation: trans 5s ease ;
+    animation: trans 5s ease 0.2s;
   }
 
   .opac{
     opacity:1;
-    animation: opacite 7s linear 1;
+    animation: opacite 7.2s linear 1;
   }
 
  @keyframes widthscale{
